@@ -1,0 +1,403 @@
+{
+	"info": {
+		"_postman_id": "b3cef4ab-a84d-45ac-9e0b-9a7683213cd4",
+		"name": "Faster-code-microsoft",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ivs-product-ms",
+			"item": [
+				{
+					"name": "Create-Product",
+					"item": [
+						{
+							"name": "http://localhost:8080/product/api/v1",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "[\r\n    {\r\n        \"productId\": \"REALME9PRO\",\r\n        \"productName\": \"Realme\",\r\n        \"description\": \"it is nice phone\",\r\n        \"manufacture\": \"Realme\",\r\n        \"category\": \"Electronics\",\r\n        \"manufactureDate\": \"2022-09-08\",\r\n        \"sellerid\": \"SELLER59\",\r\n        \"variants\": [\r\n            {\r\n                \"id\": \"PINKREALMEPRO\",\r\n                \"type\": \"phone\",\r\n                \"size\": \"12inch\",\r\n                \"color\": \"PINK\",\r\n                \"highlights\": [\r\n                    {\r\n                        \"specifications\": {\r\n                            \"RAM\": \"4GB\"\r\n                        }\r\n                    }\r\n                ],\r\n                \"stock\": 8,\r\n                \"cost\": 40000\r\n            }\r\n        \r\n    ]\r\n},\r\n{\r\n    \"productId\": \"TES93024\",\r\n    \"productName\": \"Nike TShirt\",\r\n    \"description\": \"it is nice tshirt\",\r\n    \"manufacture\": \"NIKE\",\r\n    \"category\": \"Clothing\",\r\n    \"manufactureDate\": \"2022-09-08\",\r\n    \"sellerid\": \"SELLER59\",\r\n    \"variants\": [\r\n        {\r\n            \"id\": \"PINKREALMEPRO\",\r\n            \"type\": \"phone\",\r\n            \"size\": \"12inch\",\r\n            \"color\": \"PINK\",\r\n            \"highlights\": [\r\n                {\r\n                    \"specifications\": {\r\n                        \"RAM\": \"4GB\"\r\n                    }\r\n                }\r\n            ],\r\n            \"stock\": 8,\r\n            \"cost\": 40000\r\n        }\r\n    ]\r\n}\r\n]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/product/api/v1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"product",
+										"api",
+										"v1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "ExceptionHandling",
+					"item": [
+						{
+							"name": "http://localhost:8080/product/api/v1",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "[\r\n    {\r\n        \"productId\": \"\",\r\n        \"productName\": \"\",\r\n        \"description\": \"\",\r\n        \"manufacture\": \"Realme\",\r\n        \"category\": \"Electronics\",\r\n        \"manufactureDate\": \"2022-09-08\",\r\n        \"sellerid\": \"SELLER59\",\r\n        \"variants\": [\r\n            {\r\n                \"_id\": \"PINKREALMEPRO\",\r\n                \"type\": \"phone\",\r\n                \"size\": \"12inch\",\r\n                \"color\": \"PINK\",\r\n                \"highlights\": [\r\n                    {\r\n                        \"specifications\": {\r\n                            \"RAM\": \"4GB\"\r\n                        }\r\n                    }\r\n                ],\r\n                \"stock\": 8,\r\n                \"cost\": 40000\r\n            }\r\n        \r\n    ]\r\n},\r\n{\r\n    \"productId\": \"\",\r\n    \"productName\": \"Nike TShirt\",\r\n    \"description\": \"it is nice tshirt\",\r\n    \"manufacture\": \"NIKE\",\r\n    \"category\": \"Clothing\",\r\n    \"manufactureDate\": \"2022-09-08\",\r\n    \"sellerid\": \"SELLER59\",\r\n    \"variants\": [\r\n        {\r\n            \"_id\": \"PINKREALMEPRO\",\r\n            \"type\": \"phone\",\r\n            \"size\": \"12inch\",\r\n            \"color\": \"PINK\",\r\n            \"highlights\": [\r\n                {\r\n                    \"specifications\": {\r\n                        \"RAM\": \"4GB\"\r\n                    }\r\n                }\r\n            ],\r\n            \"stock\": 8,\r\n            \"cost\": 40000\r\n        }\r\n    ]\r\n}\r\n]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/product/api/v1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"product",
+										"api",
+										"v1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "get-seller-products",
+					"item": [
+						{
+							"name": "http://localhost:8080/product/api/v1",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{ \"sellerId\":\"SELLER59\",\r\n \"variantId\":\"PINKREALMEPRO\",\r\n\"productId\":\"REALME9PRO\",\r\n \"stocksize\":\"5\"\t\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/product/api/v1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"product",
+										"api",
+										"v1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "getvariantsofproduct",
+					"item": [
+						{
+							"name": "http://localhost:8080/product/api/v1/product/variants",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{ \"sellerId\":\"SELLER59\",\r\n \"variantId\":\"PINKREALMEPRO\",\r\n\"productId\":\"REALME9PRO\"\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/product/api/v1/product/variants",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"product",
+										"api",
+										"v1",
+										"product",
+										"variants"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "updatestock",
+					"item": [
+						{
+							"name": "http://localhost:8080/product/api/v1/updateStock",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{ \"sellerId\":\"SELLER59\",\r\n \"variantId\":\"PINKREALMEPRO\",\r\n\"productId\":\"REALME9PRO\",\r\n \"stocksize\":\"90\"\t\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/product/api/v1/updateStock",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"product",
+										"api",
+										"v1",
+										"updateStock"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "deletevariant",
+					"item": [
+						{
+							"name": "http://localhost:8080/product/api/v1/deleteVariant",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{ \"sellerId\":\"SELLER59\",\r\n \"variantId\":\"PINKREALMEPRO\",\r\n\"productId\":\"REALME9PRO\",\r\n \"stocksize\":\"90\"\t\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/product/api/v1/deleteVariant",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"product",
+										"api",
+										"v1",
+										"deleteVariant"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "AddingNewSellertoExistingProduct",
+					"item": [
+						{
+							"name": "http://localhost:8080/product/api/v1 Copy",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "[\r\n    {\r\n        \"productId\": \"REALME9PRO\",\r\n        \"productName\": \"Realme\",\r\n        \"description\": \"it is nice phone\",\r\n        \"manufacture\": \"Realme\",\r\n        \"category\": \"Electronics\",\r\n        \"manufactureDate\": \"2022-09-08\",\r\n        \"sellerid\": \"SELLER59\",\r\n        \"variants\": [\r\n            {\r\n                \"id\": \"PINKREALMEPRO\",\r\n                \"type\": \"phone\",\r\n                \"size\": \"12inch\",\r\n                \"color\": \"PINK\",\r\n                \"highlights\": [\r\n                    {\r\n                        \"specifications\": {\r\n                            \"RAM\": \"4GB\"\r\n                        }\r\n                    }\r\n                ],\r\n                \"stock\": 8,\r\n                \"cost\": 40000\r\n            }\r\n        \r\n    ]\r\n},\r\n{\r\n    \"productId\": \"TES93024\",\r\n    \"productName\": \"Nike TShirt\",\r\n    \"description\": \"it is nice tshirt\",\r\n    \"manufacture\": \"NIKE\",\r\n    \"category\": \"Clothing\",\r\n    \"manufactureDate\": \"2022-09-08\",\r\n    \"sellerid\": \"SELLER59\",\r\n    \"variants\": [\r\n        {\r\n            \"id\": \"PINKREALMEPRO\",\r\n            \"type\": \"phone\",\r\n            \"size\": \"12inch\",\r\n            \"color\": \"PINK\",\r\n            \"highlights\": [\r\n                {\r\n                    \"specifications\": {\r\n                        \"RAM\": \"4GB\"\r\n                    }\r\n                }\r\n            ],\r\n            \"stock\": 8,\r\n            \"cost\": 40000\r\n        }\r\n    ]\r\n}\r\n]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/product/api/v1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"product",
+										"api",
+										"v1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "AddingVarinatsToProduct",
+					"item": [
+						{
+							"name": "http://localhost:8080/product/api/v1 Copy 2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "[\r\n    {\r\n        \"productId\": \"REALME9PRO\",\r\n        \"productName\": \"Realme\",\r\n        \"description\": \"it is nice phone\",\r\n        \"manufacture\": \"Realme\",\r\n        \"category\": \"Electronics\",\r\n        \"manufactureDate\": \"2022-09-08\",\r\n        \"sellerid\": \"SELLER59\",\r\n        \"variants\": [\r\n            {\r\n                \"id\": \"PINKREALMEPRO\",\r\n                \"type\": \"phone\",\r\n                \"size\": \"12inch\",\r\n                \"color\": \"PINK\",\r\n                \"highlights\": [\r\n                    {\r\n                        \"specifications\": {\r\n                            \"RAM\": \"4GB\"\r\n                        }\r\n                    }\r\n                ],\r\n                \"stock\": 8,\r\n                \"cost\": 40000\r\n            }\r\n        \r\n    ]\r\n},\r\n{\r\n    \"productId\": \"TES93024\",\r\n    \"productName\": \"Nike TShirt\",\r\n    \"description\": \"it is nice tshirt\",\r\n    \"manufacture\": \"NIKE\",\r\n    \"category\": \"Clothing\",\r\n    \"manufactureDate\": \"2022-09-08\",\r\n    \"sellerid\": \"SELLER59\",\r\n    \"variants\": [\r\n        {\r\n            \"id\": \"PINKREALMEPRO\",\r\n            \"type\": \"phone\",\r\n            \"size\": \"12inch\",\r\n            \"color\": \"PINK\",\r\n            \"highlights\": [\r\n                {\r\n                    \"specifications\": {\r\n                        \"RAM\": \"4GB\"\r\n                    }\r\n                }\r\n            ],\r\n            \"stock\": 8,\r\n            \"cost\": 40000\r\n        }\r\n    ]\r\n}\r\n]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/product/api/v1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"product",
+										"api",
+										"v1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "ivs-file-upload",
+			"item": [
+				{
+					"name": "file-upload",
+					"item": [
+						{
+							"name": "Fileupload",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/C:/Users/compu/Desktop/InventoryMangaement-Java-Github-Copilot/TestingFiles/test.csv"
+										},
+										{
+											"key": "sellerid",
+											"value": "\"asdasdasd\"",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8002/upload/file",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8002",
+									"path": [
+										"upload",
+										"file"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "img-upload",
+					"item": [
+						{
+							"name": "img-upload",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": [
+												"/C:/Users/compu/Desktop/InventoryMangaement-Java-Github-Copilot/TestingFiles/surfacepro1.jpg",
+												"/C:/Users/compu/Desktop/InventoryMangaement-Java-Github-Copilot/TestingFiles/surfacepro2.jfif"
+											]
+										},
+										{
+											"key": "sellerid",
+											"value": "\"344\"",
+											"type": "default"
+										},
+										{
+											"key": "productid",
+											"value": "\"sadasd\"",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8002/upload/images?file",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8002",
+									"path": [
+										"upload",
+										"images"
+									],
+									"query": [
+										{
+											"key": "file",
+											"value": null
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}

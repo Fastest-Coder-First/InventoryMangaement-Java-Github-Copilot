@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: ivs-vendor-product-ms
+  data:
+    mongodb:
+      host: localhost
+      database: ivsdb
+      port: 27017
+      uri: mongodb://localhost:27017/ivs
+
+      
