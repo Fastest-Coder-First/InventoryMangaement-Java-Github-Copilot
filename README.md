@@ -46,11 +46,15 @@ ArchitectureType : RESTFUL
 Programming: Reactive
 
 Why Microsevice:
+
 Future Scope
+
 Integrate easily
+
 Independant
 
 Why Reactive
+
 Overcomes the limitations of the Thread-per request model
 
 
