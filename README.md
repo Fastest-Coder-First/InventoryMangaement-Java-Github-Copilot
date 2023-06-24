@@ -18,49 +18,85 @@ SNAPSHOTS OF GITHUB-CO-PILOT-USAGE:
 DB SCHEMA MONGO:
 {
         "_id" : "REALME9PRO",
+        
         "productName" : "Realme",
+        
         "description" : "it is nice phone",
+        
         "manufacture" : "Realme",
+        
         "category" : "Electronics",
+        
         "manufactureDate" : "2022-09-08",
+        
         "sellers" : [
                 {
                         "_id" : "SELLER59",
+                        
                         "variants" : [
+                                
                                 {
                                         "_id" : "REDREALMEPRO",
+                                        
                                         "type" : "phone",
+                                        
                                         "size" : "12inch",
+                                        
                                         "color" : "RED",
+                                        
                                         "highlights" : [
+                                                
                                                 {
                                                         "specifications" : {
+                                        
                                                                 "RAM" : "4GB"
+                                                        
                                                         }
                                                 }
                                         ],
+                                        
                                         "stock" : 8,
+                                        
                                         "cost" : 40000
+                                
                                 }
+                        
                         ]
+                
                 },
+                
                 {
                         "_id" : "SELLER99",
+                        
                         "variants" : [
                                 {
+                                      
                                         "_id" : "PINKREALMEPRO",
+                                        
                                         "type" : "phone",
+                                        
                                         "size" : "12inch",
+                                        
                                         "color" : "PINK",
+                                        
                                         "highlights" : [
+                                          
                                                 {
+                                                
                                                         "specifications" : {
+                                                        
                                                                 "RAM" : "4GB"
+                                                        
                                                         }
+                                                
                                                 }
+                                        
                                         ],
+                                        
                                         "stock" : 8,
+                                        
                                         "cost" : 40000
+                                
                                 }
                         ]
                 }
