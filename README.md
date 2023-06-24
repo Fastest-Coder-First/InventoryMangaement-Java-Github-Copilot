@@ -13,7 +13,9 @@ SNAPSHOTS OF GITHUB-CO-PILOT-USAGE:
 
 ![image](https://github.com/Fastest-Coder-First/InventoryMangaement-Java-Github-Copilot/assets/31736263/e580c642-e891-4dd8-9e77-d1c955c71159)
 
-![image](https://github.com/Fastest-Coder-First/InventoryMangaement-Java-Github-Copilot/assets/31736263/74e0313b-de63-4985-9628-2a38a069a481)
+![image](https://github.com/Fastest-Coder-First/InventoryMangaement-Java-Github-Copilot/assets/31736263/4b23ddfe-6088-471d-b8b5-0bf4195187da)
+
+
 
 DB SCHEMA MONGO:
 {
