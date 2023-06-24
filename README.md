@@ -2,6 +2,10 @@
 
 URL:https://drive.google.com/file/d/1mt0NhmguKVyhJ9vwqvTT9xXlB2Ufae1J/view
 
+![image](https://github.com/Fastest-Coder-First/InventoryMangaement-Java-Github-Copilot/assets/31736263/6d0d551e-22bc-4452-a8c0-43b9d8218d22)
+
+
+
 USES OF THE GITHUB-PILOT:
 
 SHOW THE BUGS AND ALSO FIXES
